@@ -13,14 +13,14 @@ public class CountInversions {
   private static BigDecimal total = new BigDecimal(0);
 
   public static void main(String[] args) {
-    CountInversions ms = new CountInversions();
+    CountInversions ci = new CountInversions();
     int[] inputArray = new int[100000];
     try {
       inputArray = initializeInputArray("IntegerArray.txt");
     } catch (IOException e) {
       e.printStackTrace();
     }
-    int[] sortedArray = ms.divideAndConquer(inputArray);
+    int[] sortedArray = ci.divideAndConquer(inputArray);
     System.out.println("Number of inversions: " + total);
   }
 
